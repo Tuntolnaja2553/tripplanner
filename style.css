@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+.navbar {
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #5865f2;
+}
+
+.nav-text {
+    color: #7a8190;
+    font-size: 14px;
+}
+
+main {
+    width: 86%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.hero {
+    margin: 35px 0;
+    padding: 55px;
+    min-height: 300px;
+    border-radius: 28px;
+    background: linear-gradient(120deg, #5865f2, #7b61ff);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: .8;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #d9dcff;
+}
+
+.hero-text {
+    max-width: 480px;
+    line-height: 1.7;
+    opacity: .9;
+}
+
+.hero-icon {
+    font-size: 130px;
+    transform: rotate(-8deg);
+    opacity: .9;
+}
+
+.create-card,
+.add-card,
+.schedule-card {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 10px 35px rgba(30, 40, 70, .07);
+}
+
+.section-title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: #eef0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.section-title h2 {
+    font-size: 20px;
+}
+
+.section-title p,
+.description {
+    color: #89909f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #555d6d;
+}
+
+input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #e3e6ed;
+    border-radius: 11px;
+    outline: none;
+    font-size: 14px;
+    background: #fafbfc;
+    transition: .2s;
+}
+
+input:focus {
+    border-color: #5865f2;
+    background: white;
+    box-shadow: 0 0 0 3px #5865f220;
+}
+
+.primary-btn {
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    background: #5865f2;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.primary-btn:hover {
+    background: #4752d9;
+    transform: translateY(-1px);
+}
+
+.hidden {
+    display: none;
+}
+
+.trip-section {
+    margin-top: 30px;
+}
+
+.trip-top {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 35px rgba(30, 40, 70, .07);
+}
+
+.trip-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #5865f2;
+    font-weight: 800;
+}
+
+.trip-top h2 {
+    font-size: 28px;
+    margin: 7px 0;
+}
+
+.trip-top p {
+    color: #777f8e;
+    margin-top: 5px;
+}
+
+.budget-card {
+    background: #eef0ff;
+    border-radius: 16px;
+    padding: 18px 25px;
+    min-width: 190px;
+}
+
+.budget-card p {
+    font-size: 13px;
+    color: #656d80;
+}
+
+.budget-card strong {
+    display: block;
+    color: #5865f2;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 25px;
+}
+
+.add-card h2,
+.schedule-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.schedule-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.schedule-title p {
+    color: #8a91a0;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.schedule-title > span {
+    background: #eef0ff;
+    color: #5865f2;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.place-card {
+    border: 1px solid #edf0f4;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 12px;
+    transition: .2s;
+}
+
+.place-card:hover {
+    border-color: #cdd1ff;
+    transform: translateY(-2px);
+}
+
+.place-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.place-card p {
+    color: #737b8c;
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+.empty {
+    text-align: center;
+    padding: 50px 20px;
+    color: #9aa1af;
+}
+
+.empty div {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.empty p {
+    font-weight: 700;
+    color: #626a79;
+}
+
+.empty span {
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    color: #9aa1af;
+    font-size: 13px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 35px 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+
+    .form-grid,
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .budget-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero {
+        border-radius: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .create-card,
+    .add-card,
+    .schedule-card,
+    .trip-top {
+        padding: 22px;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

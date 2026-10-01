@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">✈️ Trip<span>Planner</span></div>
+        <div class="nav-text">วางแผนการเดินทางของคุณ</div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div>
+                <p class="small-title">YOUR NEXT ADVENTURE</p>
+                <h1>วางแผนทริป<br><span>ให้ง่ายขึ้น</span></h1>
+                <p class="hero-text">
+                    จัดการสถานที่ เวลา และค่าใช้จ่ายของทริป
+                    ทั้งหมดไว้ในที่เดียว
+                </p>
+            </div>
+
+            <div class="hero-icon">🗺️</div>
+        </section>
+
+
+        <section class="create-card">
+
+            <div class="section-title">
+                <div class="icon-box">✈️</div>
+                <div>
+                    <h2>สร้างทริปใหม่</h2>
+                    <p>เริ่มวางแผนการเดินทางของคุณ</p>
+                </div>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>ชื่อทริป</label>
+                    <input id="tripName" type="text" placeholder="เช่น เที่ยวเชียงใหม่">
+                </div>
+
+                <div class="input-group">
+                    <label>จุดหมายปลายทาง</label>
+                    <input id="location" type="text" placeholder="เช่น เชียงใหม่">
+                </div>
+
+                <div class="input-group">
+                    <label>วันเริ่มต้น</label>
+                    <input id="startDate" type="date">
+                </div>
+
+                <div class="input-group">
+                    <label>วันสิ้นสุด</label>
+                    <input id="endDate" type="date">
+                </div>
+
+            </div>
+
+            <button class="primary-btn" onclick="createTrip()">
+                สร้างทริปของฉัน →
+            </button>
+
+        </section>
+
+
+        <section id="tripSection" class="trip-section hidden">
+
+            <div class="trip-top">
+
+                <div>
+                    <span class="trip-label">MY TRIP</span>
+                    <h2 id="displayTripName">ชื่อทริป</h2>
+                    <p id="displayLocation">📍 สถานที่</p>
+                    <p id="displayDate">📅 วันที่</p>
+                </div>
+
+                <div class="budget-card">
+                    <p>ค่าใช้จ่ายทั้งหมด</p>
+                    <strong id="totalCost">0 บาท</strong>
+                </div>
+
+            </div>
+
+
+            <div class="content-grid">
+
+                <div class="add-card">
+
+                    <h2>📍 เพิ่มสถานที่</h2>
+                    <p class="description">เพิ่มสถานที่ที่อยากไปในทริปนี้</p>
+
+                    <div class="input-group">
+                        <label>ชื่อสถานที่</label>
+                        <input id="placeName" type="text" placeholder="เช่น ดอยสุเทพ">
+                    </div>
+
+                    <div class="two-column">
+
+                        <div class="input-group">
+                            <label>เวลา</label>
+                            <input id="placeTime" type="time">
+                        </div>
+
+                        <div class="input-group">
+                            <label>ค่าใช้จ่าย</label>
+                            <input id="placeCost" type="number" placeholder="0">
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>รายละเอียด</label>
+                        <input id="placeNote" type="text" placeholder="เช่น ไปถ่ายรูป">
+                    </div>
+
+                    <button class="primary-btn" onclick="addPlace()">
+                        + เพิ่มสถานที่
+                    </button>
+
+                </div>
+
+
+                <div class="schedule-card">
+
+                    <div class="schedule-title">
+                        <div>
+                            <h2>📅 ตารางเที่ยว</h2>
+                            <p>สถานที่ของคุณ</p>
+                        </div>
+
+                        <span id="placeCount">0 สถานที่</span>
+                    </div>
+
+                    <div id="placeList" class="place-list">
+                        <div class="empty">
+                            <div>🧳</div>
+                            <p>ยังไม่มีสถานที่</p>
+                            <span>เพิ่มสถานที่แรกของคุณได้เลย</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>✈️ Trip Planner — วางแผนทริปให้สนุกกว่าเดิม</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
