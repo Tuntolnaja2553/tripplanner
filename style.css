@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #4f7cff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.date-row,
+.place-row {
+    display: flex;
+    gap: 15px;
+}
+
+.date-row > div {
+    flex: 1;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #4f7cff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #315fe0;
+}
+
+.hidden {
+    display: none;
+}
+
+.trip-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.trip-header h2 {
+    margin-bottom: 8px;
+}
+
+.trip-header p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.total {
+    text-align: right;
+    background: #eef3ff;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.total span {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.total strong {
+    font-size: 24px;
+    color: #315fe0;
+}
+
+.place-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.place-card h3 {
+    margin-bottom: 8px;
+}
+
+.place-card p {
+    color: #666;
+    margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+    .date-row,
+    .place-row,
+    .trip-header {
+        flex-direction: column;
+    }
+
+    .total {
+        width: 100%;
+        text-align: left;
+    }
+}
