@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>✈️ Trip Planner</h1>
+        <p>วางแผนทริปของคุณในที่เดียว</p>
+    </header>
+
+    <main>
+
+        <section class="trip-form">
+            <h2>สร้างทริปใหม่</h2>
+
+            <label>ชื่อทริป</label>
+            <input type="text" id="tripName" placeholder="เช่น เที่ยวเชียงใหม่">
+
+            <label>สถานที่</label>
+            <input type="text" id="location" placeholder="เช่น เชียงใหม่">
+
+            <div class="date-row">
+                <div>
+                    <label>วันเริ่มต้น</label>
+                    <input type="date" id="startDate">
+                </div>
+
+                <div>
+                    <label>วันสิ้นสุด</label>
+                    <input type="date" id="endDate">
+                </div>
+            </div>
+
+            <button onclick="createTrip()">+ สร้างทริป</button>
+        </section>
+
+        <section id="tripSection" class="trip-section hidden">
+
+            <div class="trip-header">
+                <div>
+                    <h2 id="displayTripName">ชื่อทริป</h2>
+                    <p id="displayLocation">สถานที่</p>
+                    <p id="displayDate">วันที่</p>
+                </div>
+
+                <div class="total">
+                    <span>ค่าใช้จ่ายทั้งหมด</span>
+                    <strong id="totalCost">0 บาท</strong>
+                </div>
+            </div>
+
+            <div class="add-place">
+                <h2>📍 เพิ่มสถานที่เที่ยว</h2>
+
+                <input type="text" id="placeName" placeholder="ชื่อสถานที่">
+
+                <div class="place-row">
+                    <input type="time" id="placeTime">
+                    <input type="number" id="placeCost" placeholder="ค่าใช้จ่าย (บาท)">
+                </div>
+
+                <input type="text" id="placeNote" placeholder="รายละเอียดเพิ่มเติม">
+
+                <button onclick="addPlace()">เพิ่มสถานที่</button>
+            </div>
+
+            <div class="places">
+                <h2>📅 ตารางเที่ยว</h2>
+                <div id="placeList"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
